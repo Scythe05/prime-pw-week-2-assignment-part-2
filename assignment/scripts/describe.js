@@ -133,10 +133,11 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - colorOne and colorTwo are set equal to the wrong colors. colorOne should be equal to blue and colorTwo should be equal to red.
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
-
+// FIX - only colorOne was set to 'purple' when colorTwo also should've been set to 'purple'.
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -149,7 +150,7 @@ if (mix === true) {
 /*
 let temp = 40;
 const time = 4;
-
+// FIX - In the if arguement, they use || which means or but it should be && for and.
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -162,7 +163,8 @@ if (temp > 39 || time >= 4) {
 /*
 let age = 21;
 const minAge = 21;
-
+// Fix - we are checking if minAge is less than or equal to age when it should be if age is greater than or equal to minAge.
+// Fix - the console.logs should be switched so that 'enter' is with the if statement and 'no entry' is with the else statement.
 if(minAge <= age) {
   console.log('no entry');
 } else {
